@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,intail-scale=1.0">
+        <tittle> document</tittle>
+        <style>
+            label{
+                color:blue
+            }
+            h1{
+                color:black
+            }
+        </style>
+    </head>
+    <body>
+        <h1> HTML FORM</h1>
+        <form>
+            <fieldset>
+            <label for="username">name:</label>
+            <input type="text" name="username" id="username"/>
+            <br>
+            <label for="password">password:</label>
+            <input type="password" name="password" id="password"/>
+
+            <br>
+            <label for="email">email:</label>
+            <input type="email" name="email" id="email"/>
+
+            <br>
+            <label for="number">number</label>
+            <input type="number" name="number" id="number"/>
+
+            <br>
+            <label for="date">date of birth</label>
+            <input type="date" name="date" id="date"/>
+
+            <br>
+            <label for="month">month</label>
+            <input type="month" name="month" id="month"/>
+
+            <br>
+            <label for="datetime">date & time</label>
+            <input type="datetime-local" name="datetime" id="datetime"/>
+
+            <br>
+            <label for="color">color </label>
+            <input type="color" name="color" id="color"/>
+
+            <br>
+            <label for="resume"> upload your resume</label>
+            <input type="file" name="resume" id="resume"/>
+
+            <br>
+            <label> <input type="radio" name="gender" value="male">male</label>
+            <label> <input type="radio" name="gender" value="female">female</label>
+            <label> <input type="radio" name="gender" value="other">other</label>
+
+            <br>
+            <p> select hobbies </p>
+            <label> <input type="checkbox" name="hobbies" value="reading">Reading</label>
+            <label> <input type="checkbox" name="hobbies" value="playing ">Playing</label>
+            <label> <input type="checkbox" name="hobbies" value="coding">Coding</label>
+            
+            <p>qualification</p>
+            <select name="qualification" required="true">
+                <option value="10">10th</option>
+                <option value="12">12th</option>
+                <option value="graduation">Graduation</option>
+
+            </select>
+
+            <br>
+            <button type="submit">submit</button>
+            <button type="reset">clear form</button>
+            <button type="button"> click me</button>
+            </fieldset>
+        </form>
+        <form>
+            <fieldset>
+                <legend> user detail</legend>
+
+                <label for="username"> enter your name</label>
+                <inpu type="text" name="username" id="username"/>
+
+                <br>
+                <label for="password"> enter your password</label>
+                <input type="password" name="password" id="password"/>
+            </fieldset>
+        </form>
+    </body>
+</html>
