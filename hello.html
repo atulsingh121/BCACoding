@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first page</title>
+    <style>
+        body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #74ebd5, #ACB6E5);
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    color: darkblue;
+    margin-top: 20px;
+}
+
+form{
+    width: 400px;
+    margin: 30px auto;
+}
+
+fieldset{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #444;
+    box-shadow: 0px 0px 10px gray;
+}
+
+legend{
+    font-size: 22px;
+    font-weight: bold;
+    color: darkred;
+}
+
+label{
+    font-weight: bold;
+}
+
+input,
+select{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+    width: auto;
+    margin-right: 5px;
+}
+
+p{
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: darkblue;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button:hover{
+    background-color: green;
+}
+    </style>
+</head>
+<body>
+
+    <u><h1>Html Form</h1></u>
+    <hr>
+    <form>
+        <fieldset>
+            <legend>Student Form</legend>
+    <label for="username">Name</label>
+    <input type="text" name="username" id="username"/>
+
+    <br>
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password"/>
+    
+    <br>
+    <label for="email">email</label>
+    <input type="email" name="email" id="email"/>
+
+    <br>
+    <label for="number">Number</label>
+    <input type="number" name="number" id="number"/>
+
+    <br>
+    <label for="date">Date of birth</label>
+    <input tyoe="date" name="date" id="date"/>
+
+    <br>
+    <label for="month">month</label>
+    <input type="month" name="month" id="month"/>
+
+    <br>
+    <label for="datetime">Date & Time</label>
+    <input type="datetime-local" name="datetime" id="datetime"/>
+
+    <br>
+    <label for="color">Color</label>
+    <input type="color" name="color" id="color"/>
+
+    <br>
+    <label><input type="radio" name="gender" value="male">Male</label>
+    <label><input type="radio" name="gender" value="female">Female</label>
+    <label><input type="radio" name="gender" value="other">Other</label>
+
+    <br>
+    <p>select hobbies</p>
+    <label><input type="checkbox" name="hobby" value="reading">Reading</label>
+    <label><input type="checkbox" name="hobby" value="playing">playing</label>
+    <label><input type="checkbox" name="hobby" value="coding">Codong</label>
+
+    <br>
+    <p>Qualification</p>
+    <select name="qualifcation" required="true">
+        <option value="10">10th</option>
+        <option value="12">12th</option>
+        <option value="gradution">Gradution</option>
+    </select>
+
+    <br>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+    </form>
+        </fieldset>
+    </form>
+
+</body>
+</html>
