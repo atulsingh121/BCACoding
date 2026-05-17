@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <h1>HTML & Web Development Fundamentals</h1>
+        <p>A compelete revision template based on the provided notes</p>
+        <hr style="height:3px ; background-color:black; border: none;">
+    </center>
+    <center>
+        <nav>
+            <a href="https://www basics.com">Basics |</a>
+            <a href="https://www formatting.com">Formatting |</a>
+            <a href="https://www media.com">Media |</a>
+            <a href="https://www lists.com">Lists |</a>
+            <a href="https://www tables.com">Tables |</a>
+            <a href="https://www form.com">Forms </a>
+    </center>
+    </nav>
+    <hr>
+    <section>
+        <h1>1. What is Web Development</h1>
+        <p>Web development is the process of creating, building, and maintaining websites and web applications. It
+            involves <b>Front-End, Back-End, and Database Management.</b></p>
+        <h2>The Client-server Model</h2>
+        <p>The Client (Browser) sends a request, and the Server (Provider ) sends back a reponce.</p>
+    </section>
+    <section>
+        <h1>2. HTML Elements & Formating</h1>
+        <p>This paragraph contains various inline elements</p>
+        <br>
+        <ul>
+            <li><b>bold Text vs Strong Importance</b></li>
+            <li><i>Italic Text vs Emphasized Text</i></li>
+            <li><u>Underlined Text</u> for visual effect</li>
+            <li>Small text:This is small</li>
+            <li>Scientific Notation:H<sub>2</sub>O (Subscript) and E=mc<sup>2</sup> (superscript)</li>
+            <li>Keyword Formatting:</li>
+            <pre><p>This preserves  spaces  and  tabs</p></pre>
+        </ul>
+    </section>
+    <section>
+        <h1>3. Multimedia section</h1>
+        <center>
+            <p>Image Examples:</p>
+            <img src="AA.jpg" width="400"></img>
+            <img src="bb.jpeg" width="450"></img>           
+            <p>Video Examples:</p>
+            <video src="vid.mp4" width="50%" controls="true" loop="true" muted="true"></video>
+            <p>Audio Example:</p>
+            <audio src="audio.mp3" width="40" controls="true" loop="true" muted="true"></audio>
+        </center>
+    </section>
+    <section>
+        <h1>4. List & Structured Data</h1>
+        <h3> Type of Lists</h3>
+        <h4>unordered Lists (Items don't matter)</h4>
+        <ul>
+            <li> Google chrome</li>
+            <li> Mozilla firefox</li>
+            <li> Safari</li>
+        </ul>
+        <h4> ordered list ( sequence matters)</h4>
+        <ol type="A">
+            <li> DNS Lookup</li>
+            <li> HTTP Request</li>
+            <li> server Responce</li>
+        </ol>
+        <h4> Descripion List ( Terms & Definitation)</h4>
+        <dl>
+            <dt> HTTP</dt>
+            <dd> Hyper Text Transfer protocol (not secure)</dd>
+            <dt> HTTPS</dt>
+            <dd> Hypertext Transfer protocol Secure (encrypted)</dd>
+        </dl>
+  </section>
+  <section>
+    <h1>5. Browser Engines Table</h1>
+    <table border="2px">
+        <head>
+            <tr>
+                <th>Engines</th>
+                <th>Bronmrs</th>
+                <th>Developed by</th>
+            </tr>
+
+            <tr>
+            <td>Blink</td>
+            <td>Crome,Edge,Opera</td>
+            <td>Google</td>
+            </tr>
+
+            <tr>
+                <td>Gecko</td>
+                <td>firefox</td>
+                <td>Mozilla</td>
+            </tr>
+
+            <tr>
+                <td>Webkij</td>
+                <td>Safari</td>
+                <td>Apple</td>            
+            </tr>
+        </head>
+    </table>
+  </section>
+  <section>
+    <h1>6. HTML Interractive From</h1>
+    <from action="">
+    <u><h1>Html Form</h1></u>
+    <hr>
+    <form>
+        <fieldset>
+            <legend>Student Form</legend>
+    <label for="username">Name</label>
+    <input type="text" name="username" id="username"/>
+
+    <br>
+    <br>
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password"/>
+    
+    <br>
+    <br>
+    <label for="email">email</label>
+    <input type="email" name="email" id="email"/>
+
+    <br>
+    <br>
+    <label for="number">Number</label>
+    <input type="number" name="number" id="number"/>
+
+    <br>
+    <br>
+    <label for="date">Date of birth</label>
+    <input tyoe="date" name="date" id="date"/>
+
+    <br>
+    <br>
+    <label for="month">month</label>
+    <input type="month" name="month" id="month"/>
+
+    <br>
+    <br>
+    <label for="datetime">Date & Time</label>
+    <input type="datetime-local" name="datetime" id="datetime"/>
+
+    <br>
+    <br>
+    <label for="color">Color</label>
+    <input type="color" name="color" id="color"/>
+
+    <br>
+    <br>
+    <label><input type="radio" name="gender" value="male">Male</label>
+    <label><input type="radio" name="gender" value="female">Female</label>
+    <label><input type="radio" name="gender" value="other">Other</label>
+
+    <br>
+    <br>
+    <p>select hobbies</p>
+    <label><input type="checkbox" name="hobby" value="reading">Reading</label>
+    <label><input type="checkbox" name="hobby" value="playing">playing</label>
+    <label><input type="checkbox" name="hobby" value="coding">Codong</label>
+
+    <br>
+    <br>
+    <p>Qualification</p>
+    <select name="qualifcation" required="true">
+        <option value="10">10th</option>
+        <option value="12">12th</option>
+        <option value="gradution">Gradution</option>
+    </select>
+
+    <br>
+    <br>
+    <button type="submit application">Submit application</button>
+    <button type="reset">Reset</button>
+        </fieldset>
+    </form>
+    </section>
+    <hr>
+    <br>
+</center>
+<section>
+    <footer>
+        <center>
+        <p> Contract for Help:</p>
+        <a href="https:www.email.com" target="_blank">Email us</a>
+        <a href="https:www.call support" target="_blank">Call support</a>
+        <a href="https:www.whatsApp" target="_blank">WhatsApp</a>
+        <h5>&copy; 2026 HTML Revision guide</h5>
+        </center>   
+    </footer>
+</section>
+</body>
+
+</html>
