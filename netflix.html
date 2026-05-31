@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Netflix Style Website</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:black;
+      color:white;
+    }
+
+    header{
+      width:100%;
+      height:100vh;
+      background:
+      linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+      url('https://images.unsplash.com/photo-1524985069026-dd778a71c7b4');
+      background-size:cover;
+      background-position:center;
+    }
+
+    nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:20px 60px;
+    }
+
+    .logo{
+      color:red;
+      font-size:40px;
+      font-weight:bold;
+    }
+
+    nav button{
+      background:red;
+      color:white;
+      border:none;
+      padding:10px 20px;
+      border-radius:5px;
+      cursor:pointer;
+      font-size:16px;
+    }
+
+    .hero{
+      height:80vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      flex-direction:column;
+      text-align:center;
+      padding:20px;
+    }
+
+    .hero h1{
+      font-size:60px;
+      margin-bottom:20px;
+    }
+
+    .hero p{
+      font-size:24px;
+      margin-bottom:20px;
+    }
+
+    .hero input{
+      width:350px;
+      padding:15px;
+      border:none;
+      outline:none;
+      border-radius:5px;
+      font-size:18px;
+    }
+
+    .hero button{
+      padding:15px 25px;
+      background:red;
+      border:none;
+      color:white;
+      font-size:18px;
+      margin-left:10px;
+      border-radius:5px;
+      cursor:pointer;
+    }
+
+    .section{
+      display:flex;
+      justify-content:space-around;
+      align-items:center;
+      padding:80px 10%;
+      border-top:8px solid #222;
+      flex-wrap:wrap;
+    }
+
+    .text{
+      width:500px;
+    }
+
+    .text h1{
+      font-size:50px;
+      margin-bottom:20px;
+    }
+
+    .text p{
+      font-size:24px;
+    }
+
+    .media{
+      width:500px;
+      position:relative;
+    }
+
+    .media img{
+      width:100%;
+      border-radius:10px;
+    }
+
+    .media video{
+      position:absolute;
+      top:20%;
+      left:13%;
+      width:73%;
+      z-index:-1;
+    }
+
+    .slider{
+      width:100%;
+      overflow:hidden;
+      border-top:8px solid #222;
+      padding:40px 0;
+    }
+
+    .slide-track{
+      display:flex;
+      width:calc(250px * 10);
+      animation:scroll 20s linear infinite;
+    }
+
+    .slide{
+      width:250px;
+      height:150px;
+      margin:15px;
+      border-radius:10px;
+      overflow:hidden;
+    }
+
+    .slide img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      transition:0.5s;
+    }
+
+    .slide img:hover{
+      transform:scale(1.1);
+    }
+
+    @keyframes scroll{
+      0%{
+        transform:translateX(0);
+      }
+      100%{
+        transform:translateX(-1000px);
+      }
+    }
+
+    footer{
+      text-align:center;
+      padding:30px;
+      border-top:8px solid #222;
+      color:gray;
+    }
+
+    @media(max-width:900px){
+
+      .hero h1{
+        font-size:40px;
+      }
+
+      .section{
+        flex-direction:column;
+        text-align:center;
+      }
+
+      .text,.media{
+        width:100%;
+      }
+
+      .hero input{
+        width:90%;
+        margin-bottom:15px;
+      }
+
+      .hero button{
+        margin-left:0;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+
+    <nav>
+      <div class="logo">NETFLIX</div>
+      <button>Sign In</button>
+    </nav>
+
+    <div class="hero">
+      <h1>Unlimited Movies, TV Shows & More</h1>
+      <p>Watch anywhere. Cancel anytime.</p>
+
+      <div>
+        <input type="email" placeholder="Enter your email">
+        <button onclick="showMessage()">Get Started</button>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- SECTION 1 -->
+
+  <section class="section">
+
+    <div class="text">
+      <h1>Enjoy on your TV</h1>
+      <p>
+        Watch on Smart TVs, PlayStation, Xbox,
+        Chromecast, Apple TV and more.
+      </p>
+    </div>
+
+    <div class="media">
+
+      <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png">
+
+      <video autoplay loop muted>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      </video>
+
+    </div>
+
+  </section>
+
+  <!-- SECTION 2 -->
+
+  <section class="section">
+
+    <div class="media">
+      <img src="https://wallpaperaccess.com/full/2703652.png">
+    </div>
+
+    <div class="text">
+      <h1>Download your shows</h1>
+      <p>
+        Save your favourites easily and always
+        have something to watch.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- IMAGE SLIDER -->
+
+  <div class="slider">
+
+    <div class="slide-track">
+
+      <div class="slide">
+        <img src="https://picsum.photos/id/1011/400/300">
+      </div>
+
+      <div class="slide">
+        <img src="https://picsum.photos/id/1015/400/300">
+      </div>
+
+      <div class="slide">
+        <img src="https://picsum.photos/id/1016/400/300">
+      </div>
+
+      <div class="slide">
+        <img src="https://picsum.photos/id/1025/400/300">
+      </div>
+
+      <div class="slide">
+        <img src="https://picsum.photos/id/1035/400/300">
+      </div>
+
+      <div class="slide">
+        <img src="https://picsum.photos/id/1040/400/300">
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer>
+    <h2>Created By Atul Kumar ❤️</h2>
+  </footer>
+
+  <script>
+
+    function showMessage(){
+      alert("Welcome to Netflix Style Website!");
+    }
+
+  </script>
+
+</body>
+</html>
