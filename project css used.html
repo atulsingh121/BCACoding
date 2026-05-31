@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Revision Guide</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f7fb;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        nav {
+            background: white;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #1e3c72;
+            margin: 0 12px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff6600;
+        }
+
+        section {
+            background: white;
+            width: 90%;
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        section h1 {
+            color: #1e3c72;
+            margin-bottom: 15px;
+            border-left: 6px solid #ff6600;
+            padding-left: 10px;
+        }
+
+        section h2,
+        section h3,
+        section h4 {
+            margin-top: 15px;
+            color: #333;
+        }
+
+        ul,
+        ol,
+        dl {
+            margin-left: 25px;
+            margin-top: 10px;
+        }
+
+        pre {
+            background: #222;
+            color: #00ff99;
+            padding: 10px;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+
+        img,
+        video {
+            border-radius: 12px;
+            margin: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table th {
+            background: #1e3c72;
+            color: white;
+            padding: 12px;
+        }
+
+        table td {
+            padding: 12px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+        table tr:nth-child(even) {
+            background: #f2f2f2;
+        }
+
+        fieldset {
+            border: 2px solid #1e3c72;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        legend {
+            font-size: 22px;
+            font-weight: bold;
+            color: #1e3c72;
+        }
+
+        form label {
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: 1px solid #aaa;
+        }
+
+        input:focus,
+        select:focus {
+            outline: none;
+            border-color: #1e3c72;
+            box-shadow: 0 0 5px #1e3c72;
+        }
+
+        button {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            margin-right: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        button[type="submit"] {
+            background: #1e3c72;
+            color: white;
+        }
+
+        button[type="reset"] {
+            background: #ff6600;
+            color: white;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        footer {
+            background: #1e1e1e;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #00bfff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            color: #ff6600;
+        }
+    html{
+        scroll-behavior: smooth;
+    }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>HTML & Web Development Fundamentals</h1>
+        <p>A Complete Revision Template Based On The Provided Notes</p>
+    </header>
+
+    <nav>
+        <a href="#1">Basics</a>
+        <a href="#2">Formatting</a>
+        <a href="#3">Media</a>
+        <a href="#4">Lists</a>
+        <a href="#5">Tables</a>
+        <a href="#6">Forms</a>
+    </nav>
+
+    <section>
+        <h1 id="1">1. What is Web Development</h1>
+
+        <p>
+            Web development is the process of creating, building, and maintaining websites and web applications.
+            It involves <b>Front-End, Back-End, and Database Management.</b>
+        </p>
+
+        <h2>The Client-Server Model</h2>
+
+        <p>
+            The Client (Browser) sends a request, and the Server sends back a response.
+        </p>
+    </section>
+
+    <section>
+        <h1 id="2">2. HTML Elements & Formatting</h1>
+
+        <ul>
+            <li><b>Bold Text vs Strong Importance</b></li>
+            <li><i>Italic Text vs Emphasized Text</i></li>
+            <li><u>Underlined Text</u> for visual effect</li>
+            <li><small>This is Small Text</small></li>
+            <li>Scientific Notation: H<sub>2</sub>O and E = mc<sup>2</sup></li>
+        </ul>
+
+        <pre>
+This preserves spaces and tabs
+        </pre>
+    </section>
+
+    <section>
+        <h1 id="3">3. Multimedia Section</h1>
+
+        <center>
+            <p><b>Image Examples</b></p>
+
+            <img src="AA.jpg" width="350">
+            <img src="krishna.jpg" width="350">
+
+            <p><b>Video Example</b></p>
+
+            <video src="song video.mp4" width="70%" controls loop muted poster="download.jpg"></video>
+
+            <p><b>Audio Example</b></p>
+
+            <audio src="sawan aaya h.mp3" controls loop muted></audio>
+        </center>
+    </section>
+
+    <section>
+        <h1 id="4">4. Lists & Structured Data</h1>
+
+        <h3>Unordered List</h3>
+
+        <ul>
+            <li>Google Chrome</li>
+            <li>Mozilla Firefox</li>
+            <li>Safari</li>
+        </ul>
+
+        <h3>Ordered List</h3>
+
+        <ol type="A">
+            <li>DNS Lookup</li>
+            <li>HTTP Request</li>
+            <li>Server Response</li>
+        </ol>
+
+        <h3>Description List</h3>
+
+        <dl>
+            <dt><b>HTTP</b></dt>
+            <dd>Hyper Text Transfer Protocol</dd>
+
+            <dt><b>HTTPS</b></dt>
+            <dd>Hyper Text Transfer Protocol Secure</dd>
+        </dl>
+    </section>
+
+    <section>
+        <h1 id="5">5. Browser Engines Table</h1>
+
+        <table border="1" width="80% cellpadding="0" >
+            <tr>
+                <th>Engine</th>
+                <th>Browser</th>
+                <th>Developed By</th>
+            </tr>
+
+            <tr>
+                <td>Blink</td>
+                <td>Chrome, Edge, Opera</td>
+                <td>Google</td>
+            </tr>
+
+            <tr>
+                <td>Gecko</td>
+                <td>Firefox</td>
+                <td>Mozilla</td>
+            </tr>
+
+            <tr>
+                <td>WebKit</td>
+                <td>Safari</td>
+                <td>Apple</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h1 id="6">6. HTML Interactive Form</h1>
+
+        <form>
+
+            <fieldset>
+
+                <legend><b>Student Form</b></legend>
+
+                <label>Name</label>
+                <input type="text" placeholder="Enter your name">
+
+                <label>Password</label>
+                <input type="password" placeholder="Enter password">
+
+                <label>Email</label>
+                <input type="email" placeholder="Enter email">
+
+                <label>Number</label>
+                <input type="number" placeholder="Enter number">
+
+                <label>Date of Birth</label>
+                <input type="date">
+
+                <label>Month</label>
+                <input type="month">
+
+                <label>Date & Time</label>
+                <input type="datetime-local">
+
+                <label>Choose Color</label>
+                <input type="color">
+
+                <p><b>Gender</b></p>
+
+                <label><input type="radio" name="gender"> Male</label>
+                <label><input type="radio" name="gender"> Female</label>
+                <label><input type="radio" name="gender"> Other</label>
+
+                <br><br>
+
+                <p><b>Select Hobbies</b></p>
+
+                <label><input type="checkbox"> Reading</label>
+                <label><input type="checkbox"> Playing</label>
+                <label><input type="checkbox"> Coding</label>
+
+                <br><br>
+
+                <label>Qualification</label>
+
+                <select>
+                    <option>10th</option>
+                    <option>12th</option>
+                    <option>Graduation</option>
+                </select>
+
+                <button type="submit">Submit Application</button>
+                <button type="reset">Reset</button>
+
+            </fieldset>
+
+        </form>
+    </section>
+
+    <footer>
+
+        <p>Contact For Help:</p>
+
+        <a href="#">Email Us</a>
+        <a href="#">Call Support</a>
+        <a href="#">WhatsApp</a>
+
+        <h4>© 2026 HTML Revision Guide</h4>
+
+    </footer>
+
+</body>
+
+</html>
